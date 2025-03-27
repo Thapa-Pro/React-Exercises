@@ -1,0 +1,102 @@
+/* --------- Global Reset --------- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1f1f3d;
+  color: white;
+}
+
+/* --------- App Container --------- */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* --------- Header --------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;   /* <-- fixed comma */
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+/* --------- Logo image --------- */
+.logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 6px;
+}
+
+/* --------- Cart section --------- */
+.cart {
+  font-weight: bold;
+  color: #ff5f6d;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* --------- Circle counter --------- */
+.cart-count {
+  display: inline-block;
+  background-color: white;
+  color: #1f1f3d;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* --------- Book List --------- */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* --------- Book Card --------- */
+.book-card {
+  background-color: white;
+  color: #1f1f3d;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 340px; /* Ensures similar card height */
+}
+
+.book-card h3 {
+  margin-top: 0;
+}
+
+.book-card p {
+  margin: 0.1rem;
+}
+
+
+.book-card button {
+  background-color: #1eb29d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: auto;         /* Push button to bottom */
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center;       /* Center the button */
+}
+
+.book-card button:hover {
+  background-color: #179482;
+}
