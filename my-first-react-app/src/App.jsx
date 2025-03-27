@@ -7,8 +7,6 @@ function App() {
     <section className="app">
       <h1>{appName}</h1>
       <ToDoList />
-      { /* We can use just this code as well instead of import on the top */}
-
     </section>
   )
 }
