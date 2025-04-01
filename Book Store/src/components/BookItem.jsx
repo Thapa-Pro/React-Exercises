@@ -7,7 +7,7 @@ const BookItem = ({ book }) => {
             <p><strong>Author:</strong> {book.author}</p>
             <p><strong>Genre:</strong> {book.genre}</p>
             <p><strong>Pages:</strong> {book.pages}</p>
-            <p>{book.desc}</p>
+            <p>{book.desc}</p>       {/*Book Description*/}
             <button>Add to cart</button>
         </div>
     );
