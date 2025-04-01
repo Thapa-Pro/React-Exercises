@@ -1,11 +1,12 @@
-import logo from '../assets/look.png'; // Uppgifts  image 
+import logo from '../assets/look.png'; // Your logo image
 
-const Header = () => {
+// Header receives the current total cart count as a prop
+const Header = ({ cartCount }) => {
     return (
         <header>
             <img src={logo} alt="Look Logo" className="logo" />
             <div className="cart">
-                Cart <span className="cart-count">0</span>
+                Cart <span className="cart-count">{cartCount}</span>
             </div>
         </header>
     );

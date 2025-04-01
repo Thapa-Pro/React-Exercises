@@ -12,17 +12,6 @@ body {
   padding: 2rem 1rem;
 }
 
-/* --------- Header --------- */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;  
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* --------- Logo image --------- */
 .logo {
   height: 60px;
@@ -30,8 +19,25 @@ header {
   border-radius: 2px;
 }
 
+/* --------- Header --------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;  /* NEW: allows .cart to be placed absolutely */
+}
+
+
+
 /* --------- Cart section --------- */
 .cart {
+  position: absolute;  /* NEW: to push cart to the corner */
+  top: 0;
+  right: 0;
   font-weight: bold;
   color: #ff5f6d;
   font-size: 1.5rem;
