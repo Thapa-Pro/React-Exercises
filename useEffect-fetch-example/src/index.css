@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  width: 100vw;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  font-size: 1.25rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  border: none;
+  background-color: rgb(57, 169, 57);
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+}
