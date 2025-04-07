@@ -6,7 +6,7 @@ function App() {
   const url = 'https://jsonplaceholder.typicode.com/todos';
 
   useEffect(() => {
-
+    console.log('I run everytime when updated');
   }, []);
 
   const handleClick = () => {
